@@ -1,0 +1,134 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.784
+The purpose of this program is to have the sprite draw
+
+2
+00:00:02.784 --> 00:00:05.516
+the outline of a house, two walls and a pointed roof,
+
+3
+00:00:05.516 --> 00:00:08.352
+one line at a time, and announce what it's doing at the
+
+4
+00:00:08.352 --> 00:00:09.280
+start and the end.
+
+5
+00:00:09.630 --> 00:00:12.784
+The way my code works is: when the green flag is
+
+6
+00:00:12.784 --> 00:00:13.310
+clicked,
+
+7
+00:00:13.670 --> 00:00:16.398
+the reset block sets everything up. It moves the sprite
+
+8
+00:00:16.398 --> 00:00:19.126
+to its starting spot at the bottom left, clears the old
+
+9
+00:00:19.126 --> 00:00:21.854
+drawing, puts the pen down in yellow, points the sprite
+
+10
+00:00:21.854 --> 00:00:23.590
+to the right, and waits one second.
+
+11
+00:00:23.930 --> 00:00:26.887
+Then the sprite says, let's draw a house, for two
+
+12
+00:00:26.887 --> 00:00:27.370
+seconds.
+
+13
+00:00:27.730 --> 00:00:31.010
+Next it turns left ninety degrees, so it's facing up,
+
+14
+00:00:31.370 --> 00:00:34.170
+moves eighty steps to draw the left wall,
+
+15
+00:00:34.500 --> 00:00:37.786
+and waits one second, so you can see that line get
+
+16
+00:00:37.786 --> 00:00:38.180
+drawn.
+
+17
+00:00:38.530 --> 00:00:41.170
+Then it turns right forty-five degrees,
+
+18
+00:00:41.530 --> 00:00:44.741
+and moves seventy steps, which draws the left side of
+
+19
+00:00:44.741 --> 00:00:47.770
+the roof going up at an angle, and waits a second.
+
+20
+00:00:48.130 --> 00:00:51.250
+It turns right ninety degrees, so now it's angled down,
+
+21
+00:00:51.600 --> 00:00:54.656
+and moves seventy steps for the right side of the roof,
+
+22
+00:00:54.656 --> 00:00:55.600
+then waits again.
+
+23
+00:00:55.930 --> 00:00:59.194
+It turns right forty-five more degrees, so it's pointing
+
+24
+00:00:59.194 --> 00:01:00.010
+straight down,
+
+25
+00:01:00.370 --> 00:01:03.335
+moves eighty steps to draw the right wall, and waits one
+
+26
+00:01:03.335 --> 00:01:03.970
+more second.
+
+27
+00:01:04.300 --> 00:01:07.781
+Finally, it turns left ninety degrees, so it's facing
+
+28
+00:01:07.781 --> 00:01:08.700
+forward again,
+
+29
+00:01:09.030 --> 00:01:11.350
+and says yay, for two seconds.
+
+30
+00:01:12.630 --> 00:01:15.196
+Every step happens in exactly this order, so if I
+
+31
+00:01:15.196 --> 00:01:17.971
+swapped any of the turn blocks, the lines would go in
+
+32
+00:01:17.971 --> 00:01:20.851
+different directions, and it wouldn't look like a house
+
+33
+00:01:20.851 --> 00:01:21.270
+anymore.
+

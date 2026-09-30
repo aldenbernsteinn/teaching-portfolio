@@ -37,6 +37,8 @@ h2 {
 }
 .work { list-style: none; padding: 0; }
 .work li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.work h3 { font-size: 1.05rem; margin: 0 0 10px; }
+.work video { display: block; width: 100%; border-radius: 8px; background: #000; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 16px; }
