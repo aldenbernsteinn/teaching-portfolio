@@ -4,6 +4,7 @@
   --muted: #6e6e73;
   --accent: #0a66c2;
   --rule: #e5e5ea;
+  --hover: #f5f5f7;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -12,6 +13,7 @@
     --muted: #9a9aa0;
     --accent: #5aa2f0;
     --rule: #2c2c30;
+    --hover: #1c1c1f;
   }
 }
 * { box-sizing: border-box; }
@@ -36,9 +38,58 @@ h2 {
   padding-bottom: 8px;
 }
 .work { list-style: none; padding: 0; }
-.work li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
-.work h3 { font-size: 1.05rem; margin: 0 0 10px; }
-.work video { display: block; width: 100%; border-radius: 8px; background: #000; }
+.work li { border-bottom: 1px solid var(--rule); }
+.entry { scroll-margin-top: 16px; }
+.entry summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 6px;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 6px;
+}
+.entry summary::-webkit-details-marker { display: none; }
+.entry summary:hover { background: var(--hover); }
+.entry summary::before {
+  content: "";
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px 0 2px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s;
+}
+.entry[open] summary::before { transform: rotate(45deg); }
+.entry h3 { flex: 1; font-size: 1.05rem; font-weight: 600; margin: 0; }
+.copy {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.copy:hover { background: var(--rule); }
+.copy::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  background: var(--muted);
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E");
+}
+.copy:hover::after { background: var(--text); }
+.copy.done::after {
+  background: var(--accent);
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+.entry video { display: block; width: 100%; aspect-ratio: 16 / 9; margin: 4px 0 16px; border-radius: 8px; background: #000; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 16px; }

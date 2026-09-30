@@ -22,11 +22,16 @@
       <h2>Work</h2>
       <ul class="work">
         <li>
-          <h3>Week 1: Show What You Know: Explain Your Program</h3>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/Week%201%20-%20Show%20What%20You%20Know%20-%20Explain%20Your%20Program.mp4" type="video/mp4">
-            <track kind="captions" srclang="en" label="English" src="videos/Week%201%20-%20Show%20What%20You%20Know%20-%20Explain%20Your%20Program.vtt" default>
-          </video>
+          <details class="entry" id="week-1-show-what-you-know-explain-your-program">
+            <summary>
+              <h3>Week 1: Show What You Know: Explain Your Program</h3>
+              <button class="copy" type="button" title="Copy link" aria-label="Copy link"></button>
+            </summary>
+            <video controls preload="none" playsinline poster="videos/Week%201%20-%20Show%20What%20You%20Know%20-%20Explain%20Your%20Program.jpg">
+              <source src="videos/Week%201%20-%20Show%20What%20You%20Know%20-%20Explain%20Your%20Program.mp4" type="video/mp4">
+              <track kind="captions" srclang="en" label="English" src="videos/Week%201%20-%20Show%20What%20You%20Know%20-%20Explain%20Your%20Program.vtt" default>
+            </video>
+          </details>
         </li>
       </ul>
     </section>
@@ -35,5 +40,36 @@
   <footer>
     <a href="https://github.com/aldenbernsteinn">GitHub</a>
   </footer>
+
+  <script>
+    const entries = document.querySelectorAll('details.entry');
+    const link = (id) => location.origin + location.pathname + '#' + id;
+
+    function openFromHash() {
+      const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (el && el.matches('details.entry')) {
+        el.open = true;
+        el.scrollIntoView({ block: 'start' });
+      }
+    }
+
+    entries.forEach((el) => {
+      el.addEventListener('toggle', () => {
+        if (el.open) history.replaceState(null, '', '#' + el.id);
+        else if (location.hash === '#' + el.id) history.replaceState(null, '', location.pathname);
+      });
+      el.querySelector('.copy').addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const btn = e.currentTarget;
+        await navigator.clipboard.writeText(link(el.id));
+        btn.classList.add('done');
+        setTimeout(() => btn.classList.remove('done'), 1500);
+      });
+    });
+
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+  </script>
 </body>
 </html>
