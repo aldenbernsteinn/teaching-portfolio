@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.849
+The purpose of my program is to show a breakdancer doing
+
+2
+00:00:02.849 --> 00:00:05.494
+a quick routine. He slides over to the right, does a
+
+3
+00:00:05.494 --> 00:00:08.139
+full flip, slides back to the middle, and then moves
+
+4
+00:00:08.139 --> 00:00:08.800
+away from us.
+
+5
+00:00:09.170 --> 00:00:12.570
+When the green flag is clicked, the reset block puts him
+
+6
+00:00:12.570 --> 00:00:14.210
+in the middle of the stage.
+
+7
+00:00:14.570 --> 00:00:16.170
+Then he says let's dance.
+
+8
+00:00:16.700 --> 00:00:20.011
+My code works by using repeats in this part to slide him
+
+9
+00:00:20.011 --> 00:00:20.780
+to the right.
+
+10
+00:00:21.130 --> 00:00:24.788
+It changes x by twenty and waits half a second, four
+
+11
+00:00:24.788 --> 00:00:25.210
+times.
+
+12
+00:00:25.570 --> 00:00:27.890
+Next he switches to his breakdancing costume.
+
+13
+00:00:28.230 --> 00:00:31.830
+And it also uses repeats in this part to do the flip.
+
+14
+00:00:32.170 --> 00:00:35.961
+He turns thirty six degrees at a time, and he does that
+
+15
+00:00:35.961 --> 00:00:36.650
+ten times.
+
+16
+00:00:37.570 --> 00:00:41.090
+Ten turns of thirty six degrees adds up to a full spin.
+
+17
+00:00:41.430 --> 00:00:42.870
+Then he says nailed it.
+
+18
+00:00:43.570 --> 00:00:46.793
+This repeat slides him back. It's the same as the first
+
+19
+00:00:46.793 --> 00:00:48.610
+one, just with negative twenty.
+
+20
+00:00:48.970 --> 00:00:52.375
+And the last repeat shrinks him by ten, five times, so
+
+21
+00:00:52.375 --> 00:00:54.330
+it looks like he's moving away.
+
+22
+00:00:54.670 --> 00:00:56.670
+Then he switches back to standing up,
+
+23
+00:00:57.000 --> 00:00:57.880
+waits a second,
+
+24
+00:00:58.230 --> 00:00:59.190
+and says goodbye.
+
+25
+00:01:01.370 --> 00:01:04.386
+If I were to change this repeat like this, for example
+
+26
+00:01:04.386 --> 00:01:07.124
+changing the ten to a five, the program would run
+
+27
+00:01:07.124 --> 00:01:10.196
+differently. He would only turn halfway around, so he'd
+
+28
+00:01:10.196 --> 00:01:12.989
+never finish the flip. So the number in the repeat
+
+29
+00:01:12.989 --> 00:01:16.061
+really matters. It's the difference between nailing the
+
+30
+00:01:16.061 --> 00:01:17.290
+flip and falling flat.
+
