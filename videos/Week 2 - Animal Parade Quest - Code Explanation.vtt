@@ -1,0 +1,78 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.815
+The story of my code is an animal parade. When you click
+
+2
+00:00:03.815 --> 00:00:06.880
+an animal, it moves. Each move uses a repeat.
+
+3
+00:00:07.230 --> 00:00:10.880
+My code uses repeats in this part to make the kangaroo
+
+4
+00:00:10.880 --> 00:00:11.150
+hop.
+
+5
+00:00:11.500 --> 00:00:14.603
+The repeat runs four times. Each time, it switches to
+
+6
+00:00:14.603 --> 00:00:17.472
+the next costume, moves thirty steps, and waits a
+
+7
+00:00:17.472 --> 00:00:19.580
+little, so it looks like four jumps.
+
+8
+00:00:21.050 --> 00:00:24.250
+It also uses a repeat to make the grasshopper hop.
+
+9
+00:00:24.600 --> 00:00:28.094
+This one runs six times, because the grasshopper has six
+
+10
+00:00:28.094 --> 00:00:30.840
+costumes. Each time, it moves fifteen steps.
+
+11
+00:00:32.300 --> 00:00:35.260
+And the bee flies in a circle when you click it.
+
+12
+00:00:35.610 --> 00:00:38.554
+Each time through, it switches costume, moves twenty
+
+13
+00:00:38.554 --> 00:00:41.498
+steps, and turns thirty degrees. It does that twelve
+
+14
+00:00:41.498 --> 00:00:44.555
+times, and twelve times thirty is three hundred sixty,
+
+15
+00:00:44.555 --> 00:00:46.650
+so it ends up right where it started.
+
+16
+00:00:47.000 --> 00:00:50.154
+One thing a student might struggle with is the bee. The
+
+17
+00:00:50.154 --> 00:00:53.022
+repeat count times the turn has to add up to three
+
+18
+00:00:53.022 --> 00:00:56.119
+hundred sixty. If it doesn't, the bee won't finish its
+
+19
+00:00:56.119 --> 00:00:56.520
+circle.
+
