@@ -1,0 +1,118 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.078
+The purpose of my program is to have the monkey catch
+
+2
+00:00:03.078 --> 00:00:04.240
+the falling bananas.
+
+3
+00:00:05.070 --> 00:00:07.893
+My code works by using events in this part to start
+
+4
+00:00:07.893 --> 00:00:10.827
+everything. When the green flag is clicked, the reset
+
+5
+00:00:10.827 --> 00:00:13.705
+block puts the monkey at his starting spot. Then the
+
+6
+00:00:13.705 --> 00:00:16.030
+broadcast block tells the banana to reset.
+
+7
+00:00:17.330 --> 00:00:20.410
+Over on the banana, when it gets that message, the reset
+
+8
+00:00:20.410 --> 00:00:23.380
+block puts it at the top. Then the forever block keeps
+
+9
+00:00:23.380 --> 00:00:26.460
+changing y by negative twenty five, so it falls a little
+
+10
+00:00:26.460 --> 00:00:27.010
+at a time.
+
+11
+00:00:27.900 --> 00:00:30.941
+When the right arrow key is pressed, he moves ten steps
+
+12
+00:00:30.941 --> 00:00:31.660
+to the right.
+
+13
+00:00:32.530 --> 00:00:35.450
+And when the left arrow key is pressed, he moves
+
+14
+00:00:35.450 --> 00:00:38.370
+negative ten steps, so he goes back to the left.
+
+15
+00:00:40.330 --> 00:00:43.599
+When the monkey touches the banana, the broadcast block
+
+16
+00:00:43.599 --> 00:00:46.750
+sends reset banana, so the banana goes back up to the
+
+17
+00:00:46.750 --> 00:00:48.890
+top. Because he ate it, he says yum.
+
+18
+00:00:53.000 --> 00:00:56.037
+And it also uses events in this part to tell the monkey
+
+19
+00:00:56.037 --> 00:00:59.074
+he missed. When the banana touches the green grass, the
+
+20
+00:00:59.074 --> 00:01:01.890
+broadcast block sends missed banana, and the banana
+
+21
+00:01:01.890 --> 00:01:03.160
+resets back to the top.
+
+22
+00:01:07.830 --> 00:01:11.414
+When the monkey gets that message, he says, no, I missed
+
+23
+00:01:11.414 --> 00:01:11.990
+a banana.
+
+24
+00:01:13.830 --> 00:01:16.691
+If I were to change this event like this, for example
+
+25
+00:01:16.691 --> 00:01:19.607
+changing the right arrow to the space key, the program
+
+26
+00:01:19.607 --> 00:01:22.468
+would run differently. Pressing the right arrow would
+
+27
+00:01:22.468 --> 00:01:25.275
+not do anything anymore, so he would only move right
+
+28
+00:01:25.275 --> 00:01:28.136
+when I pressed the space bar. So the key in the event
+
+29
+00:01:28.136 --> 00:01:29.270
+block really matters.
+
