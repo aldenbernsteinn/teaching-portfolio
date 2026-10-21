@@ -1,0 +1,182 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.319
+The purpose of my program is to draw a triangle, a
+
+2
+00:00:03.319 --> 00:00:06.240
+square, and a pentagon, each in a new color.
+
+3
+00:00:06.600 --> 00:00:09.153
+My code works by using variables and events in this
+
+4
+00:00:09.153 --> 00:00:11.857
+block code. The variables keep track of the shape it's
+
+5
+00:00:11.857 --> 00:00:13.960
+drawing, and the event starts the program.
+
+6
+00:00:14.300 --> 00:00:17.591
+When the green flag is clicked, the reset block clears
+
+7
+00:00:17.591 --> 00:00:20.700
+the stage and puts the sprite at its starting spot.
+
+8
+00:00:21.030 --> 00:00:23.670
+Then the pen down block gets it ready to draw.
+
+9
+00:00:24.030 --> 00:00:27.045
+Next, the set block makes num sides three, so the
+
+10
+00:00:27.045 --> 00:00:28.830
+program will draw a triangle.
+
+11
+00:00:29.570 --> 00:00:32.893
+Then the second set block makes side length eighty, so
+
+12
+00:00:32.893 --> 00:00:35.170
+it moves eighty steps for every side.
+
+13
+00:00:35.500 --> 00:00:39.180
+The repeat uses num sides, so it runs three times.
+
+14
+00:00:39.530 --> 00:00:42.457
+Each time, it moves side length steps and turns three
+
+15
+00:00:42.457 --> 00:00:45.438
+hundred sixty degrees divided by num sides. The result
+
+16
+00:00:45.438 --> 00:00:48.310
+of this is one hundred twenty degrees for each turn.
+
+17
+00:00:48.310 --> 00:00:49.690
+Then it waits one second.
+
+18
+00:00:50.030 --> 00:00:53.440
+Then the pen up block lifts the pen, so it can move
+
+19
+00:00:53.440 --> 00:00:54.510
+without drawing,
+
+20
+00:00:54.870 --> 00:00:58.808
+and it moves side length plus thirty, which is a hundred
+
+21
+00:00:58.808 --> 00:01:01.270
+ten steps, to get to the next spot.
+
+22
+00:01:01.600 --> 00:01:04.567
+The change pen hue block gives the next shape a new
+
+23
+00:01:04.567 --> 00:01:07.360
+color, and pen down gets it ready to draw again.
+
+24
+00:01:07.700 --> 00:01:11.197
+The change block adds one to num sides, so now it's
+
+25
+00:01:11.197 --> 00:01:11.540
+four.
+
+26
+00:01:11.900 --> 00:01:15.272
+So the same repeat now runs four times, and each turn is
+
+27
+00:01:15.272 --> 00:01:17.500
+ninety degrees, which draws a square.
+
+28
+00:01:17.970 --> 00:01:21.286
+The number of sides went up. But side length is still
+
+29
+00:01:21.286 --> 00:01:24.290
+eighty, so every side is just as long as before.
+
+30
+00:01:24.630 --> 00:01:28.077
+Then it lifts the pen and moves side length plus fifty,
+
+31
+00:01:28.077 --> 00:01:30.710
+so there's more room for the bigger shape.
+
+32
+00:01:31.070 --> 00:01:32.670
+It changes the color again,
+
+33
+00:01:33.030 --> 00:01:36.390
+and changes num sides by one, so now it's five.
+
+34
+00:01:36.730 --> 00:01:39.370
+That makes the last repeat run five times,
+
+35
+00:01:39.730 --> 00:01:42.790
+and each turn is seventy two degrees, which draws a
+
+36
+00:01:42.790 --> 00:01:43.330
+pentagon.
+
+37
+00:01:45.330 --> 00:01:48.595
+It keeps drawing sides until all five are done, and it
+
+38
+00:01:48.595 --> 00:01:50.530
+ends right back up at the start.
+
+39
+00:01:54.670 --> 00:01:57.587
+Variables in programming are different than math. In
+
+40
+00:01:57.587 --> 00:02:00.616
+math, a variable is one number that doesn't change. In
+
+41
+00:02:00.616 --> 00:02:03.758
+code, a variable stores something, and it can change. In
+
+42
+00:02:03.758 --> 00:02:06.731
+my program, num sides starts at three. Then while the
+
+43
+00:02:06.731 --> 00:02:09.648
+program runs, it changes to four. Then it changes to
+
+44
+00:02:09.648 --> 00:02:12.677
+five. That's how the same repeat draws three different
+
+45
+00:02:12.677 --> 00:02:13.070
+shapes.
+
