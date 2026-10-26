@@ -1,0 +1,102 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.918
+The purpose of my program is to have a soccer ball move
+
+2
+00:00:02.918 --> 00:00:05.200
+around the stage until my mouse catches it.
+
+3
+00:00:05.570 --> 00:00:09.105
+When the green flag is clicked, the reset block resets
+
+4
+00:00:09.105 --> 00:00:09.890
+the program.
+
+5
+00:00:10.230 --> 00:00:12.070
+Then the ball says booting up.
+
+6
+00:00:12.730 --> 00:00:15.370
+Next it says, try to stop me with your mouse.
+
+7
+00:00:15.730 --> 00:00:18.596
+My code works by using a conditional loop in this part
+
+8
+00:00:18.596 --> 00:00:21.250
+to keep the ball moving until my mouse touches it.
+
+9
+00:00:21.600 --> 00:00:24.979
+Inside the loop, the first set block picks a random
+
+10
+00:00:24.979 --> 00:00:25.840
+number for x.
+
+11
+00:00:26.200 --> 00:00:29.640
+The second set block picks a random number for y.
+
+12
+00:00:30.000 --> 00:00:33.440
+Then the glide block moves the ball to that new spot.
+
+13
+00:00:33.800 --> 00:00:36.836
+After every move, the repeat until block checks if my
+
+14
+00:00:36.836 --> 00:00:40.045
+mouse is touching the ball. My mouse missed, so the loop
+
+15
+00:00:40.045 --> 00:00:42.680
+runs again and the ball moves to another spot.
+
+16
+00:00:43.030 --> 00:00:46.131
+This time my mouse lands on the ball, so the repeat
+
+17
+00:00:46.131 --> 00:00:49.110
+until block stops the loop, and the program ends.
+
+18
+00:00:49.470 --> 00:00:52.366
+Conditional loops are different than regular repeats. In
+
+19
+00:00:52.366 --> 00:00:54.899
+my program I can't use a repeat and have to use a
+
+20
+00:00:54.899 --> 00:00:57.691
+conditional repeat because I don't know how many times
+
+21
+00:00:57.691 --> 00:01:00.587
+the ball will move before my mouse catches it. A regular
+
+22
+00:01:00.587 --> 00:01:03.431
+repeat needs a set number, like ten. But my mouse could
+
+23
+00:01:03.431 --> 00:01:06.275
+catch the ball after two moves, or after twenty. So the
+
+24
+00:01:06.275 --> 00:01:09.119
+repeat until block keeps the ball moving until my mouse
+
+25
+00:01:09.119 --> 00:01:10.670
+touches it, and then it stops.
+
